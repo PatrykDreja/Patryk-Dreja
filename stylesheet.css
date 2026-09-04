@@ -1,0 +1,27 @@
+/* Menu */
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+/* Główna treść strony */
+#body {
+  min-height: 70vh;
+  padding: 2rem;
+  background-color: #f3f4f6;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* Stopka */
+#footer {
+  padding: 1rem 2rem;
+  background-color: #111827;
+  color: #d1d5db;
+  text-align: center;
+}
