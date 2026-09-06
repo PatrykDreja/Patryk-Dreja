@@ -8,7 +8,7 @@
   background-color: #1f2937;
   color: #ffffff;
 }
-a {
+#menu a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
@@ -17,6 +17,13 @@ li {
   list-style: none;
   margin: 0 1rem;
 }
+
+a {
+  color: #111827;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Główna treść strony */
 #body {
   min-height: 70vh;

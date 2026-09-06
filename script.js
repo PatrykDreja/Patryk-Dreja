@@ -11,4 +11,4 @@ function loadPage(nazwa) {
 }
 
 // Załaduj domyślną stronę przy pierwszym wejściu
-loadPage("o-mnie");
+loadPage("About");
