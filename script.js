@@ -10,6 +10,14 @@ function loadPage(nazwa) {
     });
 }
 
+// Podepnij nasłuchiwanie do WSZYSTKICH linków nawigacyjnych naraz
+document.querySelectorAll("[data-page]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault(); // zatrzymuje skok do góry strony
+    loadPage(link.dataset.page);
+  });
+});
+
 // Załaduj domyślną stronę przy pierwszym wejściu
 loadPage("about");
 

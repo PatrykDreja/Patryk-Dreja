@@ -15,7 +15,49 @@
   --text-menu: #ffffff;
   --accent: #3181a3;
 }
+.nav-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 2rem;
+}
 
+.nav-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 1.1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+
+.nav-block:hover {
+  transform: translateY(-2px);
+}
+
+.nav-block--pink {
+  background: #fbeaf0;
+  color: #4b1528;
+}
+.nav-block--teal {
+  background: #e1f5ee;
+  color: #04342c;
+}
+.nav-block--amber {
+  background: #faeeda;
+  color: #412402;
+}
+
+.nav-block i {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.nav-block small {
+  font-size: 12px;
+  opacity: 0.8;
+}
 body {
   background-color: var(--bg-main);
   color: var(--text-main);
