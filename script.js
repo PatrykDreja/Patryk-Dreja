@@ -1,4 +1,5 @@
 function loadPage(nazwa) {
+  document.getElementById("body").innerHTML = "<p>Ładowanie...</p>";
   fetch(`site/${nazwa}.html`)
     .then((response) => response.text())
     .then((html) => {

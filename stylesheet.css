@@ -58,6 +58,15 @@
   font-size: 12px;
   opacity: 0.8;
 }
+
+body,
+#body,
+.nav-block {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
 body {
   background-color: var(--bg-main);
   color: var(--text-main);
@@ -65,10 +74,12 @@ body {
     background-color 0.2s ease,
     color 0.2s ease;
 }
+
 img {
   width: 10%;
   height: 10%;
 }
+
 #menu {
   background-color: var(--bg-menu);
   color: var(--text-menu);
