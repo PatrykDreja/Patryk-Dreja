@@ -75,6 +75,13 @@ body {
     color 0.2s ease;
 }
 
+#button-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
 img {
   width: 10%;
   height: 10%;

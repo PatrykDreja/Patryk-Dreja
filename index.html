@@ -3,7 +3,7 @@
   <head>
     <title>SITE OF Patryk Dreja</title>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="icon" type="image/png" href="img/Logo.png" />
     <link rel="stylesheet" href="stylesheet.css" />
     <link
       rel="stylesheet"
@@ -12,10 +12,14 @@
   </head>
   <body>
     <div id="menu">
-      <button id="theme-toggle" aria-label="Przełącz motyw">🌙</button>
+      <div id="button-menu">
+        <button id="theme-toggle" aria-label="Przełącz motyw">🌙</button>
+        <button onclick="setLanguage('pl')">PL</button>
+        <button onclick="setLanguage('en')">EN</button>
+      </div>
 
       <div class="brand">
-        <img src="img/logo.png" alt="Logo" />
+        <img src="img/Logo.png" alt="Logo" />
         <h1>Patryk Dreja</h1>
       </div>
     </div>
@@ -27,8 +31,8 @@
           class="nav-block nav-block--pink"
         >
           <i class="fa-solid fa-user"></i>
-          <span>About me</span>
-          <small>Who I am, what I do</small>
+          <span data-i18n="nav_about">About me</span>
+          <small data-i18n="nav_about_desc">Who I am, what I do</small>
         </a>
         <a
           href="#"
@@ -36,8 +40,8 @@
           class="nav-block nav-block--teal"
         >
           <i class="fa-solid fa-code"></i>
-          <span>Projects</span>
-          <small>Selected projects</small>
+          <span data-i18n="nav_projects">Projects</span>
+          <small data-i18n="nav_projects_desc">Selected projects</small>
         </a>
         <a
           href="#"
@@ -45,17 +49,17 @@
           class="nav-block nav-block--amber"
         >
           <i class="fa-solid fa-envelope"></i>
-          <span>Contact</span>
-          <small>Email, LinkedIn, GitHub</small>
+          <span data-i18n="nav_contact">Contact</span>
+          <small data-i18n="nav_contact_desc">Email, LinkedIn, GitHub</small>
         </a>
       </nav>
     </div>
-    <div id="body">
-      <script src="script.js"></script>
-    </div>
+    <div id="body"></div>
 
     <div id="footer">
       <p>&copy; 2026 Patryk Dreja.</p>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
